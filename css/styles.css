@@ -1,0 +1,388 @@
+.bg-image {
+    background-image: url(../img/hand-touching-the-best-quality-assurance.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Hero Image */
+#hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#hero img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (orientation: landscape), (min-aspect-ratio: 4 / 3) {
+    #hero img {
+        object-position: center;
+    }
+}
+
+#hero .overlay {
+    padding: 6% 9%;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+    border-radius: 1em;
+}
+
+#hero .overlay h1 {
+    margin-bottom: 1em;
+    font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+    letter-spacing: normal;
+    line-height: 1.2;
+}
+
+#hero .overlay p {
+    font-size: clamp(1.25rem, 3vw + 0.5rem, 1.5rem);
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+    #hero .overlay {
+        padding: 10%;
+    }
+
+    #hero .overlay h1 {
+        font-size: clamp(2rem, 5vw + 1rem, 3rem);
+    }
+
+    #hero .overlay p {
+        font-size: clamp(1rem, 3vw + 0.5rem, 1.25rem);
+    }
+}
+
+/* Styles for Mobile Menu */
+#mainNavDropdown {
+    width: calc(100vw - 3em);
+}
+
+.mobile-menu-wrapper {
+    padding: 1rem !important;
+}
+
+.mobile-menu-wrapper ul li {
+    margin-left: 1rem !important;
+}
+
+/* Icon Sizing */
+.fa {
+    font-size: 2rem;
+}
+
+/* Close Button Style */
+.close-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.card {
+    opacity: 0.75;
+}
+
+/*------/ Ico Circle /------*/
+
+.ico-circle {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    display: block;
+}
+
+.services-box {
+    background-color: #fff;
+    padding: 1.0rem 1.0rem;
+    border-radius: 1rem;
+}
+
+.services-box:hover .ico-circle {
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.services-box .skills-ico {
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+}
+
+.services-box .ico-circle {
+    transition: all 500ms ease;
+    font-size: 4rem;
+}
+
+.services-box .s-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .5rem 0;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: black;
+}
+
+.services-box .s-description {
+    color: black;
+    font-size: 1.4rem;
+}
+
+/*======================================
+//--//-->   INTRO
+======================================*/
+
+.intro {
+    height: 70vh;
+    position: relative;
+    color: #fff;
+    background-image: url(../img/hand-touching-the-best-quality-assurance.jpg); /* Default background image for larger screens */
+    background-size: cover;
+    background-position: center;
+}
+
+.intro .overlay-intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+.intro .intro-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.intro .intro-title {
+    color: #fff; /* Adjust text color as needed */
+    font-size: 3rem; /* Adjust font size as needed */
+    margin-bottom: 20px;
+}
+
+.intro .intro-subtitle {
+    color: #fff; /* Adjust text color as needed */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin-bottom: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+    .intro-title {
+        font-size: 1.5rem;
+    }
+    .intro-subtitle {
+        font-size: 1rem;
+    }
+}
+
+
+.btn-primary {
+    position: relative;
+    margin-top: 20px;
+    --bs-btn-bg: #0078ff;
+    --bs-btn-border-color: #0078ff;
+}
+
+.border-top {
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.centered-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.button-container {
+    max-width: 300px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .bg-image {
+        background-image: url(../img/hand-touching-the-best-quality-assurance.jpg); /* Background image for smaller screens */
+        background-size: cover;
+    }
+}
+
+/*======================================
+//--//-->   CONTACT US
+======================================*/
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: inline-block; /* Change display to inline-block */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*======================================
+//--//-->   SERVICES SUBMENU
+======================================*/
+
+.nav-item:hover .submenu {
+    display: block;
+}
+
+.nav-item {
+    position: relative; /* Set the parent nav-item to relative positioning */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+    padding: 0;
+    margin: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    min-width: 200px; /* Set a minimum width for the submenu */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.submenu li {
+    list-style-type: none;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background-color: #f8f9fa;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991px) {
+    .submenu {
+        position: static;
+        display: block;
+        margin-top: 10px;
+        box-shadow: none;
+    }
+
+    .submenu li {
+        padding: 5px 10px;
+    }
+}
+
+/* Infographic image */
+.center-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Us */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: left;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
