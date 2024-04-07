@@ -386,3 +386,17 @@ p {
     color: #666;
     margin-bottom: 20px;
 }
+
+/* Navigation menu */
+.nav-link {
+    font-weight: bold;
+    font-size: 1.1rem; /* Increase font size */
+    text-transform: uppercase; /* Convert text to uppercase */
+    color: #333; /* Adjust text color */
+}
+
+.navbar-brand {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #333;
+}
