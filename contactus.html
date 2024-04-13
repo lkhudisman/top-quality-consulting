@@ -8,7 +8,8 @@
   <meta content="Top Quality Consulting expertise helps organizations achieve their quality goals by providing comprehensive testing solutions tailored to fit their needs." name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon-32x32.png" rel="icon">
+  <link href="./img/favicon.jpg" rel="icon">
+  <link rel="apple-touch-icon" href="./img/Top%20Quality%20Consulting%20Mobile%20Logo.jpg">
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <!-- Linking Style Sheet -->
   <link rel="stylesheet" href="css/styles.css">
@@ -20,46 +21,16 @@
 </head>
 <body>
   <!-- Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top bg-light border-bottom shadow-sm p-3 mb-5 rounded">
-      <div class="container-fluid">
-        <a class="navbar-brand fs-2 fw-bold" href="./index.html">Top Quality Consulting</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavDropdown" aria-controls="mainNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNavDropdown">
-          <ul class="navbar-nav ms-auto flex-lg-row flex-column">
-            <li class="nav-item active">
-              <a class="nav-link px-md-3 py-2 text-black" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-md-3 py-2 text-black" href="./index.html#quality-first">Quality First Mindset</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-md-3 py-2 text-black" href="./index.html#services">Services</a>
-              <ul class="submenu">
-                <li><a href="services/web-testing.html">Web Testing</a></li>
-                <li><a href="./services/api-testing.html">API Testing</a></li>
-                <li><a href="./services/accessibility-testing.html">Accessibility Testing</a></li>
-                <li><a href="./services/usability-testing.html">Usability Testing</a></li>
-                <li><a href="./services/automation-testing.html">Automation Testing</a></li>
-                <li><a href="./services/mobile-testing.html">Mobile Testing</a></li>
-                <li><a href="./services/load-performance-testing.html">Load and Performance Testing</a></li>
-                <li><a href="./services/user-acceptance-testing.html">User Acceptance Testing</a></li>
-                <li><a href="./services/system-integration-testing.html">System Integration Testing</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-md-3 py-2 text-black" href="./aboutus.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-md-3 py-2 text-black" href="./contactus.html">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <header id="header"></header>
+
+  <script>
+    // Load the header HTML
+    fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('header').innerHTML = data;
+            });
+  </script>
   <div id="home" class="intro route bg-image">
     <div class="overlay-intro"></div>
     <div class="intro-content display-table">
@@ -74,45 +45,16 @@
   <div class="container">
     <div data-aidaform-widget="form-2019-12" data-url="https://lkhudisman.aidaform.com/free-account-template-contact-form-with-captcha" data-width="100%" data-height="500px" data-do-resize></div><script>(function(){var r,d=document,gt=d.getElementById,cr=d.createElement,tg=d.getElementsByTagName,id="aidaform-embed";if(!gt.call(d,id)){r=cr.call(d,"script");r.id=id;r.src="https://embed.aidaform.com/embed.js";(d.head || tg.call(d,"head")[0]).appendChild(r);}})()</script>
   </div>
-    <footer class="bg-white border-top py-4">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-4 mb-3 mb-lg-0">
-          <img src="" alt="" class="mb-3 logo-footer" />
-          <p class="small text-gray-600">© Top Quality Consulting Inc., <span id="currentYear"></span>. All rights reserved.</p>
-        </div>
+  <footer id="footer"></footer>
 
-        <div class="col-lg-4 mb-3 mb-lg-0">
-          <h5 class="fw-semibold small text-uppercase ls-wide mb-3">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="link-hover-primary link-inherit">Home</a></li>
-            <li><a href="index.html#quality-first" class="link-hover-primary link-inherit">Quality First Mindset</a></li>
-            <li><a href="index.html#services" class="link-hover-primary link-inherit">Services</a></li>
-            <li><a href="./aboutus.html" class="link-hover-primary link-inherit">About Us</a></li>
-            <li><a href="./contactus.html" class="link-hover-primary link-inherit">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4">
-          <h5 class="fw-semibold small text-uppercase ls-wide mb-3">Services</h5>
-          <ul class="list-unstyled">
-            <li><a href="services/web-testing.html" class="link-hover-primary link-inherit">Web Testing</a></li>
-            <li><a href="./services/api-testing.html" class="link-hover-primary link-inherit">API Testing</a></li>
-            <li><a href="./services/accessibility-testing.html" class="link-hover-primary link-inherit">Accessibility Testing</a></li>
-            <li><a href="./services/usability-testing.html" class="link-hover-primary link-inherit">Usability Testing</a></li>
-            <li><a href="./services/automation-testing.html" class="link-hover-primary link-inherit">Automation Testing</a></li>
-            <li><a href="./services/mobile-testing.html" class="link-hover-primary link-inherit">Mobile Testing</a></li>
-            <li><a href="./services/load-performance-testing.html" class="link-hover-primary link-inherit">Load and Performance Testing</a></li>
-            <li><a href="./services/user-acceptance-testing.html" class="link-hover-primary link-inherit">User Acceptance Testing</a></li>
-            <li><a href="./services/system-integration-testing.html" class="link-hover-primary link-inherit">System Integration Testing</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <hr class="my-4" />
-
-    </div>
-  </footer>
+  <script>
+    // Load the footer HTML
+    fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>

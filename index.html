@@ -3,13 +3,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Top Quality Consulting - Home</title>
+  <title>Top Quality Consulting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="Top Quality Consulting, QA, quality assurance, automation testing, web testing, api testing" name="keywords">
   <meta content="Top Quality Consulting expertise helps organizations achieve their quality goals by providing comprehensive testing solutions tailored to fit their needs." name="description">
 
   <!-- Favicons -->
-  <link href="./img/favicon-32x32.png" rel="icon">
+  <link href="./img/favicon.jpg" rel="icon">
+  <link rel="apple-touch-icon" href="./img/Top%20Quality%20Consulting%20Mobile%20Logo.jpg">
   <link rel="stylesheet" href="./css/bootstrap.min.css"/>
   <!-- Linking Style Sheet -->
   <link rel="stylesheet" href="./css/styles.css">
@@ -20,46 +21,16 @@
 </head>
 <body>
   <!-- Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top bg-light border-bottom shadow-sm p-3 mb-5 rounded">
-      <div class="container-fluid">
-        <a class="navbar-brand fs-2 fw-bold text-black" href="index.html">Top Quality Consulting</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavDropdown" aria-controls="mainNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNavDropdown">
-          <ul class="navbar-nav ms-auto flex-lg-row flex-column">
-            <li class="nav-item active">
-              <a class="nav-link px-md-3 py-2 text-black" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-md-3 py-2 text-black" href="#quality-first">Quality First Mindset</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-md-3 py-2 text-black" href="#services">Services</a>
-              <ul class="submenu">
-                <li><a href="services/web-testing.html">Web Testing</a></li>
-                <li><a href="./services/api-testing.html">API Testing</a></li>
-                <li><a href="./services/accessibility-testing.html">Accessibility Testing</a></li>
-                <li><a href="./services/usability-testing.html">Usability Testing</a></li>
-                <li><a href="./services/automation-testing.html">Automation Testing</a></li>
-                <li><a href="./services/mobile-testing.html">Mobile Testing</a></li>
-                <li><a href="./services/load-performance-testing.html">Load and Performance Testing</a></li>
-                <li><a href="./services/user-acceptance-testing.html">User Acceptance Testing</a></li>
-                <li><a href="./services/system-integration-testing.html">System Integration Testing</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-md-3 py-2 text-black" href="./aboutus.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-md-3 py-2 text-black" href="./contactus.html">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <header id="header"></header>
+
+  <script>
+    // Load the header HTML
+    fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('header').innerHTML = data;
+            });
+  </script>
 
 <!-- Main Content -->
 
@@ -82,22 +53,22 @@
   <section id="quality-first" class="py-5">
     <!-- Centered Heading & Description -->
     <div class="container">
-      <h1 class="fw-bolder display-6 mb-3 text-black">Quality First Mindset</h1>
+      <h1 class="fw-bolder display-6 mb-3 ">Quality First Mindset</h1>
       <p> We emphasize prioritizing and embedding quality considerations throughout the entire software development lifecycle, ensuring that delivering a high-quality product is the primary focus from the outset.</p>
-      <h2 class="fw-bolder text-black">Benefits of Quality First Mindset Implementation</h2>
+      <h2 class="fw-bolder ">Benefits of Quality First Mindset Implementation</h2>
         <p>Implementing a Quality First mindset within a company yields tangible benefits that extend beyond mere adherence to standards. By prioritizing quality throughout the software development lifecycle, organizations can significantly reduce costs associated with defects and rework, ultimately saving both time and money.</p>
         <p>According to research conducted by the National Institute of Standards and Technology (NIST), the cost of fixing defects increases exponentially as they progress through the development lifecycle, with the expense of fixing a defect in production being significantly higher than catching it during the requirements phase.</p>
         <p>By emphasizing quality from the outset, companies can identify and address issues early on, minimizing the need for costly rework and ensuring that products are delivered on time and within budget.</p>
         <p>Additionally, a focus on quality enhances customer satisfaction, leading to increased loyalty and repeat business, further contributing to the company's bottom line. Overall, embracing a Quality First mindset not only enhances product quality and reliability but also delivers tangible financial benefits that drive long-term success and competitiveness.</p>
-      <h2 class="fw-bolder text-black">What Can Your Company Expect When These Quality Practices Are Implemented</h2>
+      <h2 class="fw-bolder ">What Can Your Company Expect When These Quality Practices Are Implemented</h2>
         <ul>
-          <li><b>Cost of Fixing Defects</b>: Studies by organizations such as IBM and NIST have shown that the cost of fixing defects increases exponentially as they progress through the development lifecycle. For instance, IBM's Systems Sciences Institute found that fixing defects in the requirements phase is estimated to be 100 times less expensive than fixing them in production.</li>
-          <li><b>Return on Investment (ROI) of Quality Practices</b>: Research conducted by the American Society for Quality (ASQ) and other organizations indicates that investing in quality practices, such as testing and defect prevention, can yield significant returns. ASQ's Global State of Quality 2 Research found that for every $1 invested in quality, companies realize an average return of $6 in revenue.</li>
-          <li><b>Time-to-Market Acceleration</b>: Implementing quality practices, such as test automation and continuous integration, can help streamline development processes and accelerate time-to-market. According to the World Quality Report by Capgemini and Sogeti, organizations that invest in test automation achieve up to a 40% reduction in time-to-market for new applications.</li>
-          <li><b>Customer Satisfaction and Loyalty</b>: Studies have shown that delivering high-quality products and services leads to increased customer satisfaction and loyalty, which in turn can result in higher revenue and reduced costs associated with customer churn and acquisition. For example, a study by Bain & Company found that increasing customer retention rates by just 5% can lead to a 25% to 95% increase in profits.</li>
+          <li><strong>Lower Cost of Fixing Defects</strong>: Studies by organizations such as IBM and NIST have shown that the cost of fixing defects increases exponentially as they progress through the development lifecycle. For instance, IBM's Systems Sciences Institute found that fixing defects in the requirements phase is estimated to be 100 times less expensive than fixing them in production.</li>
+          <li><strong>Return on Investment (ROI) of Quality Practices</strong>: Research conducted by the American Society for Quality (ASQ) and other organizations indicates that investing in quality practices, such as testing and defect prevention, can yield significant returns. ASQ's Global State of Quality 2 Research found that for every $1 invested in quality, companies realize an average return of $6 in revenue.</li>
+          <li><strong>Time-to-Market Acceleration</strong>: Implementing quality practices, such as test automation and continuous integration, can help streamline development processes and accelerate time-to-market. According to the World Quality Report by Capgemini and Sogeti, organizations that invest in test automation achieve up to a 40% reduction in time-to-market for new applications.</li>
+          <li><strong>Customer Satisfaction and Loyalty</strong>: Studies have shown that delivering high-quality products and services leads to increased customer satisfaction and loyalty, which in turn can result in higher revenue and reduced costs associated with customer churn and acquisition. For example, a study by Bain & Company found that increasing customer retention rates by just 5% can lead to a 25% to 95% increase in profits.</li>
         </ul>
       <p>While these numbers provide general estimates and trends, Top Quality Consulting will conduct a thorough analysis of your organization's specific context and performance metrics to quantify the potential time and money savings from implementing a Quality First mindset. Additionally, tracking and measuring key performance indicators (KPIs) related to quality, such as defect rates, rework costs, and customer satisfaction scores, can provide valuable insights into the effectiveness of quality initiatives over time.</p>
-      <h2 class="fw-bold text-black">Expert QA Consultancy </h2>
+      <h2 class="fw-bolder">Expert QA Consultancy </h2>
       <p>Top Quality Consulting is poised to assist your team in implementing best practices across all quality domains. We offer tailored services to enhance quality, with role-specific mentoring that actively collaborates within your team to instill quality best practices until the relevant team members evolve into thought leaders.</p>
       <div class="button-container">
         <a class="btn btn-primary btn-lg centered-button" href="./contactus.html">Start a conversation</a>
@@ -112,8 +83,8 @@
   <section id="services" class="py-5">
       <!-- Centered Heading & Description -->
       <div class="container d-flex justify-content-center align-items-start flex-column py-5 px-sm-5">
-        <h2 class="fw-bolder display-6 mb-3 text-black">Our Services</h2>
-        <p class="fs-5 text-muted lead text-black">Explore our wide range of services designed to help companies meet their quality assurance objectives while optimizing resources and efficiency.</p>
+        <h2 class="fw-bolder display-6 mb-3 ">Our Services</h2>
+        <p>Explore our wide range of services designed to help companies meet their quality assurance objectives while optimizing resources and efficiency.</p>
       </div>
     <div class="container" style="opacity: 0.75;">
       <div class="row g-4">
@@ -210,45 +181,24 @@
       </div>
     </div>
   </section>
-  <footer class="bg-white border-top py-4">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-4 mb-3 mb-lg-0">
-          <img src="" alt="" class="mb-3 logo-footer" />
-          <p class="small text-gray-600">© Top Quality Consulting Inc., <span id="currentYear"></span>. All rights reserved.</p>
-        </div>
 
-        <div class="col-lg-4 mb-3 mb-lg-0">
-          <h5 class="fw-semibold small text-uppercase ls-wide mb-3">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#home" class="link-hover-primary link-inherit">Home</a></li>
-            <li><a href="#quality-first" class="link-hover-primary link-inherit">Quality First Mindset</a></li>
-            <li><a href="#services" class="link-hover-primary link-inherit">Services</a></li>
-            <li><a href="./aboutus.html" class="link-hover-primary link-inherit">About Us</a></li>
-            <li><a href="./contactus.html" class="link-hover-primary link-inherit">Contact Us</a></li>
-          </ul>
-        </div>
+  <script>
+    // Load the footer HTML
+    fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+  </script><footer id="footer"></footer>
 
-        <div class="col-lg-4">
-          <h5 class="fw-semibold small text-uppercase ls-wide mb-3">Services</h5>
-          <ul class="list-unstyled">
-            <li><a href="services/web-testing.html" class="link-hover-primary link-inherit">Web Testing</a></li>
-            <li><a href="./services/api-testing.html" class="link-hover-primary link-inherit">API Testing</a></li>
-            <li><a href="./services/accessibility-testing.html" class="link-hover-primary link-inherit">Accessibility Testing</a></li>
-            <li><a href="./services/usability-testing.html" class="link-hover-primary link-inherit">Usability Testing</a></li>
-            <li><a href="./services/automation-testing.html" class="link-hover-primary link-inherit">Automation Testing</a></li>
-            <li><a href="./services/mobile-testing.html" class="link-hover-primary link-inherit">Mobile Testing</a></li>
-            <li><a href="./services/load-performance-testing.html" class="link-hover-primary link-inherit">Load and Performance Testing</a></li>
-            <li><a href="./services/user-acceptance-testing.html" class="link-hover-primary link-inherit">User Acceptance Testing</a></li>
-            <li><a href="./services/system-integration-testing.html" class="link-hover-primary link-inherit">System Integration Testing</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <hr class="my-4" />
-
-    </div>
-  </footer>
+  <script>
+    // Load the footer HTML
+    fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+            });
+  </script>
   <script src="./js/main.js"></script>
 </body>
 </html>

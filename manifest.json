@@ -1,0 +1,19 @@
+{
+  "name": "Top Quality Consulting",
+  "short_name": "Top Quality Consulting",
+  "icons": [
+    {
+      "src": "./img/Top Quality Consulting Mobile Logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "./img/Top Quality Consulting Logo.png",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "theme_color": "#003366",
+  "background_color": "#003366",
+  "display": "standalone"
+}
