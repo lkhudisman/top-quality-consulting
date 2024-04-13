@@ -2,7 +2,7 @@
     background-image: url(../img/hand-touching-the-best-quality-assurance.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -184,7 +184,7 @@
 ======================================*/
 
 .intro {
-    height: 70vh;
+    height: 50vh;
     position: relative;
     color: #fff;
     background-color: #003366; /* Set the background color to the primary color */
@@ -402,7 +402,7 @@ button[type="submit"]:hover {
     }
 
     .submenu li {
-        padding: 5px 10px;
+        padding: 1px 10px;
     }
 }
 
@@ -502,6 +502,7 @@ footer a:hover {
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .btn:hover {
