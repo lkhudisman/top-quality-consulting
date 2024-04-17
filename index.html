@@ -182,14 +182,7 @@
     </div>
   </section>
 
-  <script>
-    // Load the footer HTML
-    fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-              document.getElementById('footer').innerHTML = data;
-            });
-  </script><footer id="footer"></footer>
+  <footer id="footer"></footer>
 
   <script>
     // Load the footer HTML
@@ -197,8 +190,13 @@
             .then(response => response.text())
             .then(data => {
               document.getElementById('footer').innerHTML = data;
+
+              // Set the current year in the footer
+              document.getElementById("currentYear").textContent = new Date().getFullYear();
             });
+
   </script>
+  // Load the main.js file
   <script src="./js/main.js"></script>
 </body>
 </html>
