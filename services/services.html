@@ -1,0 +1,170 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Quality Consulting - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="Top Quality Consulting, QA, quality assurance, automation testing, web testing, api testing" name="keywords">
+  <meta content="Top Quality Consulting expertise helps organizations achieve their quality goals by providing comprehensive testing solutions tailored to fit their needs." name="description">
+
+  <!-- Favicons -->
+  <link href="../img/favicon.jpg" rel="icon">
+  <link rel="apple-touch-icon" href="../img/Top%20Quality%20Consulting%20Mobile%20Logo.jpg">
+  <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+  <!-- Linking Style Sheet -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/popper.min.js"></script>
+  <script defer src="../js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="header"></header>
+
+  <script>
+    // Load the header HTML
+    fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('header').innerHTML = data;
+            });
+  </script>
+
+  <!-- Main Content -->
+
+
+  <div id="home" class="intro route bg-image">
+    <div class="overlay-intro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h1 class="intro-title mb-4">Services</h1>
+          <p class="intro-subtitle">We offer tailored services to enhance quality.</p>
+          <br>
+          <div class="button-container">
+            <a class="btn btn-primary btn-lg centered-button" href="../contactus.html">Get Started Now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="services" class="py-5">
+    <!-- Centered Heading & Description -->
+    <div class="container d-flex justify-content-center align-items-start flex-column py-5 px-sm-5">
+      <h2 class="fw-bolder display-6 mb-3 ">Our Services</h2>
+      <p>Explore our wide range of services designed to help companies meet their quality assurance objectives while optimizing resources and efficiency.</p>
+    </div>
+    <div class="container" style="opacity: 0.75;">
+      <div class="row g-4">
+        <div class="card card-service col-md-4">
+          <div class="services-box">
+            <div class="services-ico">
+              <span class="ico-circle"><i class="fa-solid fa-cloud"></i></span>
+            </div>
+            <h3 class="s-title">Web Testing</h3>
+            <p class="s-description">Top Quality Consulting ensure websites function properly under realistic conditions, including browser compatibility, speed, security, and more.</p>
+            <a href="web-testing.html" target="_blank">Learn More</a>
+          </div>
+        </div>
+        <div class="card card-service col-md-4">
+          <div class="services-box">
+            <div class="services-ico">
+              <span class="ico-circle"><img src="../img/api-testing.webp" alt="" style="width:80px;height:67px;"></span>
+            </div>
+            <h3 class="s-title">API Testing</h3>
+            <p class="s-description">Validating APIs against expected behavior, ensuring they perform reliably and efficiently under varying loads.</p>
+            <a href="api-testing.html" target="_blank">Learn More</a>
+          </div>
+        </div>
+        <div class="card card-service col-md-4">
+          <div class="services-box">
+            <div class="services-ico">
+              <span class="ico-circle"><i class="fa-solid fa-wheelchair"></i></span>
+            </div>
+            <h3 class="s-title">Accessibility Testing</h3>
+            <p class="s-description">Verifying compliance with accessibility standards, ensuring products are inclusive and accessible to people with disabilities.</p>
+            <a href="accessibility-testing.html" target="_blank">Learn More</a>
+          </div>
+        </div>
+        <div class="card card-service col-md-4">
+          <div class="services-box">
+            <div class="services-ico">
+              <span class="ico-circle"><i class="fa-solid fa-desktop"></i></span>
+            </div>
+            <h3 class="s-title">Usability Testing</h3>
+            <p class="s-description">Simulating actual users to identify pain points, discover opportunities for improvement, and enhance product appeal.</p>
+            <a href="usability-testing.html" target="_blank">Learn More</a>
+          </div>
+        </div>
+        <div class="card card-service col-md-4">
+          <div class="services-box">
+            <div class="services-ico">
+              <span class="ico-circle"><i class="fa-solid fa-wand-sparkles"></i></span>
+            </div>
+            <h3 class="s-title">Automation Testing</h3>
+            <p class="s-description">Utilizing automation tools to streamline manual processes, reduce costs, and increase test coverage.</p>
+            <a href="automation-testing.html" target="_blank">Learn More</a>
+          </div>
+        </div>
+        <div class="card card-service col-md-4">
+          <div class="services-box">
+            <div class="services-ico">
+              <span class="ico-circle"><i class="fa-solid fa-signal"></i></span>
+            </div>
+            <h3 class="s-title">Mobile Testing</h3>
+            <p class="s-description">Evaluating apps across multiple platforms, versions, and device types to ensure seamless functionality.</p>
+            <a href="mobile-testing.html" target="_blank">Learn More</a>
+          </div>
+        </div>
+        <div class="card card-service col-md-4">
+          <div class="services-box">
+            <div class="services-ico">
+              <span class="ico-circle"><i class="fa-solid fa-gauge-high"></i></span>
+            </div>
+            <h3 class="s-title">Load and Performance Testing</h3>
+            <p class="s-description">Assessing scalability, stability, and response time under heavy traffic or resource constraints.</p>
+            <a href="load-performance-testing.html" target="_blank">Learn More</a>
+          </div>
+        </div>
+        <div class="card card-service col-md-4">
+          <div class="services-box">
+            <div class="services-ico">
+              <span class="ico-circle"><i class="fa-solid fa-user-check"></i></span>
+            </div>
+            <h3 class="s-title">User Acceptance Testing</h3>
+            <p class="s-description">Conducting formal tests with end users to validate software requirements and verify acceptance criteria.</p>
+            <a href="user-acceptance-testing.html" target="_blank">Learn More</a>
+          </div>
+        </div>
+        <div class="card card-service col-md-4">
+          <div class="services-box">
+            <div class="services-ico">
+              <span class="ico-circle"><i class="fa-solid fa-gears"></i></span>
+            </div>
+            <h3 class="s-title">System Integration Testing</h3>
+            <p class="s-description">Top Quality Consulting unleashes ultimate compatibility checks, resolves integration issues, and optimizes system interactions.</p>
+            <a href="system-integration-testing.html" target="_blank">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <script>
+    // Load the footer HTML
+    fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+
+              // Set the current year in the footer
+              document.getElementById("currentYear").textContent = new Date().getFullYear();
+            });
+
+  </script>
+</body>
+</html>

@@ -9,6 +9,10 @@
     background-size: cover; /* Default for larger screens */
 }
 
+.center-image {
+    padding: 10px;
+}
+
 /* Hero Image */
 #hero {
     position: relative;
@@ -104,6 +108,29 @@
     --bs-card-border-color: #FFB085;
     --bs-card-border-width: 2px;
 }
+
+.card-service {
+    margin-right: 10px; /* Adjust the right margin as needed */
+    margin-left: 10px; /* Adjust the left margin as needed */
+    width: calc(33.33% - 20px); /* Calculate the width of each card with margin */
+}
+
+@media (min-width: 768px) {
+    .card-service {
+        margin-right: 5px; /* Adjust the right margin as needed */
+        margin-left: 5px; /* Adjust the left margin as needed */
+        width: calc(33.33% - 20px); /* Calculate the width of each card with margin */
+    }
+}
+
+@media (max-width: 767px) {
+    .card-service {
+        margin-right: 0; /* Remove right margin */
+        margin-left: 5px; /* Remove left margin */
+        width: calc(100% - 10px); /* Calculate the width of each card with margin */
+    }
+}
+
 
 /*------/ Ico Circle /------*/
 
@@ -246,6 +273,23 @@
     .intro .intro-subtitle {
         font-size: 20px;
     }
+}
+
+.col-md-12 {
+    padding-bottom: 24px; /* Adjust the value as needed */
+}
+
+.col-md-6 {
+    padding-bottom: 24px; /* Adjust the value as needed */
+}
+
+.py-5 {
+    padding-top: 1.5rem !important;
+}
+
+.border {
+    --bs-border-width: 2px;
+    --bs-border-color: #FFB085;
 }
 
 .btn-primary {
