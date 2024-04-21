@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Privacy Policy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="Top Quality Consulting, Quality First Mindset, quality-first mindset, QA, quality assurance, automation testing, web testing, api testing" name="keywords">
+        <meta content="At Top Quality Consulting, we are dedicated to helping businesses achieve excellence in quality assurance (QA) and cultivate a Quality First mindset across their organizations. With a proven track record of success and a commitment to delivering top-notch services, we are your trusted partner in driving quality, innovation, and continuous improvement." name="description">
+
+        <!-- Favicons -->
+        <link href="./img/favicon.jpg" rel="icon">
+        <link rel="apple-touch-icon" href="./img/Top%20Quality%20Consulting%20Mobile%20Logo.jpg">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <!-- Linking Style Sheet -->
+        <link rel="stylesheet" href="css/styles.css">
+        <script defer src="js/jquery-3.7.1.min.js"></script>
+        <script defer src="js/popper.min.js"></script>
+        <script defer src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RV87DQKPBV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-RV87DQKPBV');
+    </script>
+    <body>
+    <!-- Navbar -->
+    <header id="header"></header>
+
+    <script>
+        // Load the header HTML
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+    <div id="home" class="intro route bg-image">
+    </div>
+    <div class="container">
+        <br/>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="border p-3">
+                    <h1 class="fw-bolder display-6 mb-3">Privacy Policy</h1>
+
+                    <p>
+                        Last updated: April 20, 2024
+                    </p>
+
+
+                    <p>
+                        Top Quality Consulting operates www.topqualityconsulting.com (the "Site"). This page informs you of our policies regarding the collection, use, and disclosure of Personal Information we receive from users of the Site.
+                    </p>
+
+                    <p>
+                        We use your Personal Information only for providing and improving the Site. By using the Site, you agree to the collection and use of information in accordance with this policy.
+                    </p>
+
+                    <h2 class="fw-bolder">Information Collection and Use</h2>
+
+                    <p>
+                        While using our Site, we may collect information that your browser sends whenever you visit our Site. This information may include your computer's Internet Protocol ("IP") address, browser type, browser version, the pages of our Site that you visit, the time and date of your visit, and other statistics. However, we do not save this information or use it for any purpose.
+                    </p>
+
+                    <h2 class="fw-bolder">Cookies</h2>
+
+                    <p>
+                        We use cookies on our website, but we only use Google Analytics cookies to analyze the performance and usage of our website. These cookies are used to collect information about how visitors use our site. We use the information to compile reports and to help us improve the site. The cookies collect information in an anonymous form, including the number of visitors to the site, where visitors have come to the site from, and the pages they visited.
+                    </p>
+                    <p>
+                        You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, some parts of our website may not function properly.
+                    </p>
+
+                    <h2 class="fw-bolder">Contact Forms</h2>
+
+                    <p>
+                        If you contact us via the contact form on our website, your message and contact information will be sent to us via email. We do not store this information on our website or in any database. We use this information solely for the purpose of responding to your inquiry and providing customer support.
+                    </p>
+
+                    <h2 class="fw-bolder">Security</h2>
+
+                    <p>
+                        The security of your Personal Information is important to us. We strive to use commercially acceptable means to protect your Personal Information. However, please be aware that no method of transmission over the Internet or method of electronic storage is 100% secure.
+                    </p>
+
+                    <h2 class="fw-bolder">Changes to This Privacy Policy</h2>
+
+                    <p>
+                        This Privacy Policy is effective as of April 20, 2024, and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.
+                    </p>
+                    <p>
+                        We reserve the right to update or change our Privacy Policy at any time, and you should check this Privacy Policy periodically. Your continued use of the Service after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.
+                    </p>
+
+                    <h2 class="fw-bolder">Contact Us</h2>
+
+                    <p>
+                        If you have any questions about this Privacy Policy, please <a href="./contactus.html">contact us.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+
+    <script>
+        // Load the footer HTML
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+
+                // Set the current year in the footer
+                document.getElementById("currentYear").textContent = new Date().getFullYear();
+            });
+
+    </script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
