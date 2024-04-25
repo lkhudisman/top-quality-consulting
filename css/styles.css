@@ -449,13 +449,20 @@ button[type="submit"]:hover {
 @media (max-width: 991px) {
     .submenu {
         position: static;
-        display: block;
+        display: none;
         margin-top: 10px;
         box-shadow: none;
     }
 
     .submenu li {
         padding: 1px 10px;
+    }
+}
+
+/* Desktop responsiveness */
+@media (min-width: 992px) {
+    .nav-item:hover .submenu {
+        display: block; /* Show submenu on desktop devices */
     }
 }
 
