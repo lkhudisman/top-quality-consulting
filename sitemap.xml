@@ -11,7 +11,7 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.topqualityconsulting.com/services.html</loc>
+        <loc>https://www.topqualityconsulting.com/services/services.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -66,7 +66,7 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://www.topqualityconsulting.com/privacy.html</loc>
+        <loc>https://www.topqualityconsulting.com/privacy-policy.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
