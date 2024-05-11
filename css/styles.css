@@ -319,6 +319,7 @@
     max-width: 300px; /* Adjust the max-width as needed */
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .border-bottom {
@@ -581,4 +582,121 @@ footer a:hover {
 
 .linkedin-link:hover {
     color: #E65C00; /* Darker color on hover */
+}
+
+/* Blog */
+.blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: scale-down;
+    margin-bottom: 20px;
+}
+
+.blog-divider {
+    border: none;
+    border-top: 2px solid #FFB085;
+    margin: 40px 0;
+
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    margin-right: 20px;
+}
+
+.author-image img {
+    width: 100px; /* adjust the width to your liking */
+    height: 100px; /* adjust the height to your liking */
+    border-radius: 50%;
+}
+
+.author-details {
+    flex: 1;
+}
+
+/* Mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .author-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .author-image {
+        order: -1;
+    }
+}
+
+/* Social media */
+.social-media-links {
+    text-align: center;
+}
+
+.social-media-links a {
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.social-media-links a:hover {
+    color: #666;
+}
+
+.social-media-links i {
+    font-size: 24px;
+}
+
+.fa-x {
+    color: #FFB085;
+}
+
+.fa-linkedin {
+    color: #FFB085;
+}
+
+.fa-instagram {
+    color: #FFB085;
+}
+
+.fa-envelope {
+    color: #FFB085;
+}
+
+.fa-linkedin-in {
+    color: #FFB085;
+}
+
+.fa-twitter {
+    color: #FFB085;
+}
+
+.fa-facebook-f {
+    color: #FFB085;
+}
+
+.fa-threads {
+    color: #FFB085;
+}
+
+.fa-calendar {
+    color: #FFB085;
+}
+
+.social-sharing {
+    text-align: center; /* Center the social media sharing buttons */
+}
+
+.social-sharing a {
+    margin: 0 10px; /* Add clear distance between each icon */
+    display: inline-block; /* Make the links inline-block to center them */
+}
+
+.social-sharing p {
+    margin-bottom: 10px; /* Add some space between the "Please Share" text and the icons */
+}
+
+.col-md-6:first-child {
+    border-right: 1px solid #FFB085;
 }
