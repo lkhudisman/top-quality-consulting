@@ -700,3 +700,7 @@ footer a:hover {
 .col-md-6:first-child {
     border-right: 1px solid #FFB085;
 }
+
+html {
+    scroll-behavior: smooth;
+}
