@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Top Quality Consulting Blog Feed</title>
+        <link>https://www.topqualityconsulting.com/blog.html</link>
+        <description>This is the RSS feed for the Top Quality Consulting blog.</description>
+        <language>en-us</language>
+        <lastBuildDate>5/21/2024</lastBuildDate>
+        <item>
+            <title>Fostering a Blameless Culture: A Cornerstone of Quality First Mindset</title>
+            <link>https://www.topqualityconsulting.com/blog/blameless-culture-quality-first-mindset.html</link>
+            <description>In this blog post, I'll discuss the significance of a blameless culture in creating a positive work environment.</description>
+            <pubDate>Mon, 09 May 2024 00:00:00 +0000</pubDate>
+        </item>
+        <item>
+            <title>Learning from Software Failures: A Quality First Perspective</title>
+            <link>https://www.topqualityconsulting.com/blog/learning-from-failures-quality-first-perspective.html</link>
+            <description>In this blog post, I'll explore the significance of adopting a Quality First Mindset by learning from real-world software failures.</description>
+            <pubDate>Mon, 18 May 2024 00:00:00 +0000</pubDate>
+        </item>
+        <!-- Add more items for additional blog posts -->
+    </channel>
+</rss>
