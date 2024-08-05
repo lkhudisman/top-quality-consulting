@@ -695,6 +695,7 @@ footer a:hover {
 
 .social-sharing p {
     margin-bottom: 10px; /* Add some space between the "Please Share" text and the icons */
+    margin-top: 10px;
 }
 
 .col-md-6:first-child {
