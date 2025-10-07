@@ -1,12 +1,14 @@
-<!-- index.html -->
+<!-- index.optimized.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Top Quality Consulting | Quality First Mindset</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta content="quality assurance, QA, automation testing, web testing, api testing, quality first mindset" name="keywords">
-  <meta content="Cultivate a Quality First Mindset with our expert QA services. Solutions to drive excellence." name="description">
+  <meta content="quality first mindset, quality assurance, QA, automation testing, web testing, api testing, quality first mindset" name="keywords">
+  <meta name="description" content="Top Quality Consulting helps organizations elevate their QA and testing practices through tailored automation, workshops, and quality-first transformation.">
+  <meta name="author" content="Top Quality Consulting">
+  <meta name="robots" content="index, follow">
 
   <meta property="og:title" content="Top Quality Consulting | Quality First Mindset">
   <meta property="og:description" content="Cultivate a Quality First Mindset with our expert QA services. Solutions to drive excellence.">
@@ -24,6 +26,7 @@
 
   <link rel="preload" href="./img/hand-touching-the-best-quality-assurance.jpg" as="image">
   <link rel="preload" href="./img/Top%20Quality%20Consulting.jpg" as="image">
+  <link rel="preload" as="image" href="./img/Collaboration-in-Software-Quality-Assurance.png">
 
   <link rel="alternate" type="application/rss+xml" title="Top Quality Consulting Blog Feed" href="feed.xml" />
 
@@ -67,13 +70,23 @@
       "founder": {
         "@type": "Person",
         "name": "Leonid Khudisman"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Quality Consulting Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Quality Assessments" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automation Strategy" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Workshops" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mentoring" } }
+        ]
       }
     }
   </script>
 
   <!-- Canonical Tag -->
   <link rel="canonical" href="https://www.topqualityconsulting.com/">
-</head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RV87DQKPBV"></script>
 <script>
@@ -83,131 +96,287 @@
 
   gtag('config', 'G-RV87DQKPBV');
 </script>
-<body>
-  <!-- Navbar -->
-  <header id="header"></header>
-
-  <script>
-    // Load the header HTML
-    fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-              document.getElementById('header').innerHTML = data;
-            });
-  </script>
-
-<!-- Main Content -->
-
-
-  <div id="home" class="intro route bg-image">
-    <div class="overlay-intro"></div>
-      <div class="intro-content display-table">
-        <div class="table-cell">
-          <div class="container">
-            <h1 class="intro-title mb-4">Quality is Embedded in Our DNA</h1>
-            <br>
-            <div class="button-container">
-              <a class="btn btn-primary btn-lg centered-button" href="./contactus.html">Get Started Now!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "url": "https://www.topqualityconsulting.com/#quality-first",
-      "name": "Top Quality Consulting | Quality First Mindset",
-      "description": "Prioritize quality throughout software development. Reduce costs, enhance customer satisfaction, and drive long-term success with our Quality First approach."
+</head>
+<style>
+    /* ===== HERO SECTION ===== */
+    .hero-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
     }
-  </script>
 
-  <section id="quality-first" class="py-5">
-    <!-- Centered Heading & Description -->
-    <div class="container">
-      <img src="./img/Top%20Quality%20Consulting.jpg" alt="Infographic Image" class="img-fluid center-image">
-      <br>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="border p-3">
-            <h2 class="fw-bolder display-6 mb-3" style="text-align: center">Quality First Mindset</h2>
-            <p>We emphasize prioritizing and embedding quality considerations throughout the entire software development lifecycle, ensuring that delivering a high-quality product is the primary focus from the outset.</p>
-            <p>Top Quality Consulting is poised to assist your team in implementing best practices across all quality domains. We offer tailored services to enhance quality, with role-specific mentoring that actively collaborates within your team to instill quality best practices until the relevant team members evolve into thought leaders.</p>
-            <div class="button-container">
-              <a class="btn btn-primary btn-lg centered-button" href="./contactus.html">Start a conversation</a>
-            </div>
-          </div>
+    .hero-picture img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .overlay-intro {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0, 25, 51, 0.6) 0%, rgba(0, 25, 51, 0.85) 100%);
+      z-index: 1;
+    }
+
+    .intro-content {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 80px 20px;
+    }
+
+    .intro-title {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .lead {
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+      max-width: 750px;
+    }
+
+    .cta-btn {
+      min-width: 260px;
+      text-align: center;
+      padding: 14px 28px;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .cta-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      .hero-picture img {
+        height: 90vh;
+      }
+      .intro-content {
+        padding: 60px 20px;
+      }
+      .cta-btn {
+        width: 100%;
+      }
+    }
+
+    /* ===== SERVICES SECTION ===== */
+    #services .col-md-3 {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      #services .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+
+<body>
+
+<!-- Header -->
+<header id="header"></header>
+<script>
+  fetch('header.html')
+          .then(r => r.text())
+          .then(html => { document.getElementById('header').innerHTML = html; });
+</script>
+
+<!-- ===== HERO SECTION ===== -->
+<section id="home" class="hero-wrapper">
+  <picture class="hero-picture">
+    <!-- Smaller, optimized mobile image -->
+    <source media="(max-width: 768px)" srcset="./img/Team-Collaboration-on-Software-QA-Mobile.png">
+    <!-- Default (desktop) image -->
+    <img src="./img/Collaboration-in-Software-Quality-Assurance.png" alt="Collaboration in Software Quality Assurance - Quality First Mindset">
+  </picture>
+
+  <div class="overlay-intro"></div>
+
+  <div class="intro-content">
+    <h1 class="intro-title fw-bold display-5 mb-4">Transform with a Quality First Mindset</h1>
+    <p class="lead mb-4">
+      Empower your team to deliver faster, reduce defects, and build lasting customer trust through embedded quality practices.
+    </p>
+    <div class="cta-container">
+      <a class="btn btn-primary btn-lg cta-btn" href="./contactus.html">Schedule a Quality Assessment</a>
+      <a class="btn btn-primary btn-lg cta-btn" href="./contactus.html#roi">Request an ROI Estimate</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUALITY FIRST MINDSET ===== -->
+<section id="quality-first" class="py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bolder display-6 mb-3 text-center" style="color: #FFB085;">
+      Quality First Mindset
+    </h2>
+    <p>We help companies embed quality into every stage of development — from design to delivery — ensuring scalable, sustainable excellence.</p>
+
+    <section class="infographic-section">
+      <div class="infographic-container">
+        <a href="./img/Quality-First-Mindset-Infographic.png" target="_blank" rel="noopener">
+          <picture>
+            <!-- Optional: smaller version for mobile if you create one later -->
+            <source srcset="./img/Quality-First-Mindset-Process-Mobile.png" media="(max-width: 600px)">
+            <img
+                    src="./img/Quality-First-Mindset-Infographic.png"
+                    alt="Quality First Mindset Infographic - Top Quality Consulting"
+                    class="infographic-image"
+                    loading="lazy">
+          </picture>
+        </a>
+      </div>
+    </section>
+
+
+    <div class="mt-5">
+      <a class="btn btn-primary btn-lg cta-btn" href="./contactus.html">Schedule a Quality Assessment</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY COMPANIES WORK WITH US ===== -->
+<section id="why-us" class="py-5" style="background-color: #003366;">
+  <div class="container text-center text-white">
+    <h3 class="fw-bold mb-5" style="color: #FFB085;">Why Companies Work With Top Quality Consulting</h3>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4">
+        <div class="why-card">
+          <h4 class="fw-bold text-white mb-3">Expert Guidance</h4>
+          <p class="text-white">We work side-by-side with your teams to instill best practices until they become second nature.</p>
         </div>
-        <!-- First Column -->
-        <div class="col-md-6">
-          <div class="border p-3">
-            <h2 class="fw-bolder ">Benefits of Quality First Mindset Implementation</h2>
-            <p>Implementing a Quality First mindset within a company yields tangible benefits that extend beyond mere adherence to standards. By prioritizing quality throughout the software development lifecycle, organizations can significantly reduce costs associated with defects and rework, ultimately saving both time and money.</p>
-            <p>According to research conducted by the National Institute of Standards and Technology (NIST), the cost of fixing defects increases exponentially as they progress through the development lifecycle, with the expense of fixing a defect in production being significantly higher than catching it during the requirements phase.</p>
-            <p>By emphasizing quality from the outset, companies can identify and address issues early on, minimizing the need for costly rework and ensuring that products are delivered on time and within budget.</p>
-            <p>Additionally, a focus on quality enhances customer satisfaction, leading to increased loyalty and repeat business, further contributing to the company's bottom line. Overall, embracing a Quality First mindset not only enhances product quality and reliability but also delivers tangible financial benefits that drive long-term success and competitiveness.</p>
-            <div class="button-container">
-              <a class="btn btn-primary btn-lg centered-button" href="./contactus.html">Start a conversation</a>
-            </div>
-          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="why-card">
+          <h4 class="fw-bold text-white mb-3">Tailored Solutions</h4>
+          <p class="text-white">We don’t offer one-size-fits-all plans — every engagement is aligned to your culture, process, and goals.</p>
         </div>
-        <!-- Second Column -->
-        <div class="col-md-6">
-          <div class="border p-3">
-            <h2 class="fw-bolder ">What Can Your Company Expect When These Quality Practices Are Implemented</h2>
-            <ul>
-              <li><strong>Lower Cost of Fixing Defects</strong>: Studies by organizations such as IBM and NIST have shown that the cost of fixing defects increases exponentially as they progress through the development lifecycle. For instance, IBM's Systems Sciences Institute found that fixing defects in the requirements phase is estimated to be 100 times less expensive than fixing them in production.</li>
-              <li><strong>Return on Investment (ROI) of Quality Practices</strong>: Research conducted by the American Society for Quality (ASQ) and other organizations indicates that investing in quality practices, such as testing and defect prevention, can yield significant returns. ASQ's Global State of Quality 2 Research found that for every $1 invested in quality, companies realize an average return of $6 in revenue.</li>
-              <li><strong>Time-to-Market Acceleration</strong>: Implementing quality practices, such as test automation and continuous integration, can help streamline development processes and accelerate time-to-market. According to the World Quality Report by Capgemini and Sogeti, organizations that invest in test automation achieve up to a 40% reduction in time-to-market for new applications.</li>
-              <li><strong>Customer Satisfaction and Loyalty</strong>: Studies have shown that delivering high-quality products and services leads to increased customer satisfaction and loyalty, which in turn can result in higher revenue and reduced costs associated with customer churn and acquisition. For example, a study by Bain & Company found that increasing customer retention rates by just 5% can lead to a 25% to 95% increase in profits.</li>
-            </ul>
-            <p>While these numbers provide general estimates and trends, Top Quality Consulting will conduct a thorough analysis of your organization's specific context and performance metrics to quantify the potential time and money savings from implementing a Quality First mindset. Additionally, tracking and measuring key performance indicators (KPIs) related to quality, such as defect rates, rework costs, and customer satisfaction scores, can provide valuable insights into the effectiveness of quality initiatives over time.</p>
-            <div class="button-container">
-              <a class="btn btn-primary btn-lg centered-button" href="./contactus.html">Start a conversation</a>
-            </div>
-          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="why-card">
+          <h4 class="fw-bold text-white mb-3">Sustainable Impact</h4>
+          <p class="text-white">Our Quality First transformation model helps teams continuously improve — even after we’re gone.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <div class="container">
-    <div class="social-sharing">
-      <p>Please Share:</p>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.topqualityconsulting.com" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://twitter.com/intent/tweet?url=https://www.topqualityconsulting.com&text=Top Quality Consulting - Quality First Mindset" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.topqualityconsulting.com&title=Top Quality Consulting | Quality First Mindset&summary=Cultivate a Quality First Mindset with our expert QA services. Solutions to drive excellence." target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="mailto:?subject=Top Quality Consulting | Quality First Mindset&body=https://www.topqualityconsulting.com">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://www.instagram.com/?url=https://www.topqualityconsulting.com" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
+<!-- ===== SERVICES ===== -->
+<section id="services" class="py-5" style="background-color: #003366;">
+  <div class="container text-center">
+    <h3 class="fw-bold mb-5" style="color: #FFB085;">Our Core Services</h3>
+    <div class="row g-5 justify-content-center">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <h4 class="fw-bold text-white mb-3">Quality Assessments</h4>
+        <p class="fs-6 text-secondary text-white">
+          Fast, actionable audits that surface the highest-impact opportunities to reduce production risk.
+        </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <h4 class="fw-bold text-white mb-3">Workshops</h4>
+        <p class="fs-6 text-secondary text-white">
+          Hands-on sessions for engineering and product teams to adopt Quality First practices.
+        </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <h4 class="fw-bold text-white mb-3">Automation Strategy</h4>
+        <p class="fs-6 text-secondary text-white">
+          Practical automation roadmaps and test-infrastructure guidance aligned to release cadence.
+        </p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <h4 class="fw-bold text-white mb-3">Mentoring</h4>
+        <p class="fs-6 text-secondary text-white">
+          Role-specific mentoring for developers, QA, and engineering managers to build internal capability.
+        </p>
+      </div>
     </div>
   </div>
+</section>
 
-  <footer id="footer"></footer>
+<!-- ===== RESULTS & CASE STUDIES ===== -->
+<section id="results" class="py-5" style="background-color: #003366;">
+  <div class="container text-center">
+    <h3 class="fw-bold mb-5" style="color: #FFB085;">Results That Speak for Themselves</h3>
 
-  <script>
-    // Load the footer HTML
-    fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-              document.getElementById('footer').innerHTML = data;
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-12 col-md-4">
+        <div class="result-card h-100 p-4">
+          <h5 class="fw-bold mb-3" style="color: #FFB085;">Global Retail Brand</h5>
+          <p class="text-white small">
+            Built and scaled a QA organization across multiple regions — achieving
+            <strong>daily releases</strong> and reducing production defects by <strong>87%</strong>.
+          </p>
+        </div>
+      </div>
 
-              // Set the current year in the footer
-              document.getElementById("currentYear").textContent = new Date().getFullYear();
-            });
+      <!-- Card 2 -->
+      <div class="col-12 col-md-4">
+        <div class="result-card h-100 p-4">
+          <h5 class="fw-bold mb-3" style="color: #FFB085;">Healthcare Technology Company</h5>
+          <p class="text-white small">
+            Led a team to design a release process that cut release cycles from
+            <strong>quarterly to weekly</strong> and improved defect detection by <strong>12%</strong>.
+          </p>
+        </div>
+      </div>
 
-  </script>
-  <script src="./js/main.js"></script>
+      <!-- Card 3 -->
+      <div class="col-12 col-md-4">
+        <div class="result-card h-100 p-4">
+          <h5 class="fw-bold mb-3" style="color: #FFB085;">Wearable Device Innovator</h5>
+          <p class="text-white small">
+            Engineered automation frameworks for firmware and hardware, achieving
+            <strong>60% higher test coverage</strong> and reducing manual testing by
+            <strong>16 hours per release</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <a class="btn btn-primary btn-lg cta-btn" href="./contactus.html">Start Your Quality Transformation</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer"></footer>
+
+<script>
+  // Load the footer HTML
+  fetch('footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer').innerHTML = data;
+
+            // Set the current year in the footer
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+          });
+
+</script>
+
+<script src="./js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>
